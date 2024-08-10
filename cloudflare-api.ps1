@@ -13,7 +13,7 @@ function Get-DnsRecords {
 		)
 
 	$parms = @{
-		Uri = https://api.cloudflare.com/client/v4/zones/$ZoneId/dns_records
+		Uri = "https://api.cloudflare.com/client/v4/zones/$ZoneId/dns_records"
 		Authentication = "Bearer"
 		Token = $ApiToken
 		Method = "Get"

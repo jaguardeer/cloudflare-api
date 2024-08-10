@@ -18,6 +18,8 @@ function Get-DnsRecords {
 		Token = $ApiToken
 		Method = "Get"
 	}
+
+	Invoke-RestMethod @parms
 }
 
 # update dns on cloudflare
